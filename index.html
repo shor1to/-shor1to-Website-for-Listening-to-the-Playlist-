@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/api.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="playlist-input">
+        <input type="text" id="playlist-id" placeholder="Введите ID плейлиста" value="PL0QFwxFJGzHKIMRsLmcF_burLpMD0BXoS">
+    </div>
+
+    <div class="content">
+        <h2>Треки из плейлиста</h2>
+        <ul class="track-list" id="track-list"></ul>
+    </div>
+
+    <div class="player-container">
+        <div class="time-info">
+            <span id="current-time">0:00</span> / <span id="duration-time">0:00</span>
+        </div>
+        <input type="range" id="seek-bar" value="0" step="1" min="0" max="100" class="seek-bar">
+        <div class="player-controls">
+            <button id="prev" class="control-btn">❮</button>
+            <button id="play-pause" class="control-btn">❚❚</button>
+            <button id="next" class="control-btn">❯</button>
+            <iframe id="player" src="https://www.youtube.com/embed/" frameborder="0" 
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <div class="volume-container">
+                <label for="volume-bar" id="volume-label">🔈</label>
+                <input type="range" id="volume-bar" value="100" step="1" min="0" max="100" class="volume-bar">
+            </div>
+        </div>
+
+        <div id="track-info" class="track-info">
+            <p id="track-name">Название трека</p>
+        </div>
+    </div>
+
+</body>
+</html>
+

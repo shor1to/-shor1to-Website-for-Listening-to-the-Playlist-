@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 20px;
+}
+
+.playlist-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+}
+
+#track-list {
+    list-style: none;
+    padding: 0;
+}
+
+.track-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.track-item:hover {
+    background-color: #333;
+}
+
+.player-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 10px;
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.control-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.control-btn:hover {
+    background-color: #444;
+}
+
+.seek-bar {
+    width: 97%;
+    margin: 0 10px;
+}
+
+.volume-container {
+    position: relative;
+    display: inline-block;
+}
+
+#volume-label {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.volume-bar {
+    position: absolute;
+    left: 80%;
+    height: 25px;
+    bottom: 0;
+    width: 100px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.volume-container:hover .volume-bar {
+    display: block;
+    opacity: 1;
+}
+
+.track-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.track-info p {
+    margin: 5px;
+}
+
+.time-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+#current-time, #duration-time {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.playlist-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#playlist-id {
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #e6e6e6;
+    margin-right: 10px;
+}
+
+#load-playlist {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+}
+
+#load-playlist:hover {
+    background-color: #e60000;
+}
